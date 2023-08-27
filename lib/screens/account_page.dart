@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:salon/screens/login_page.dart';
 
 class AccountPage extends StatelessWidget {
   const AccountPage({super.key});
@@ -126,7 +128,9 @@ class AccountPage extends StatelessWidget {
                       color: Colors.black,
                     ),
                     ListTile(
-                      onTap: () {},
+                      onTap: () {
+                        Get.off(const LoginPage());
+                      },
                       leading: const Icon(
                         Icons.lock_open_rounded,
                         size: 24,
