@@ -177,7 +177,7 @@ class _OTpPagePageState extends State<OTpPage> {
                         borderRadius: BorderRadius.circular(10)),
                     onPressed: () {
                       if (formkey.currentState!.validate()) {
-                        Get.off(HomePage());
+                        Get.off(HomeScreen());
                       } else {
                         Get.snackbar("", "",
                             colorText: Colors.white,

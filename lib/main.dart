@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:salon/screens/login_page.dart';
+import 'package:salon/screens/home.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -18,6 +18,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.amber),
           useMaterial3: true,
         ),
-        home: const LoginPage());
+        home: const HomeScreen());
   }
 }
