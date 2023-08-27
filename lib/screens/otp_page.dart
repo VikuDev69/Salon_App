@@ -211,6 +211,7 @@ class _OTpPagePageState extends State<OTpPage> {
                             reverseAnimationCurve: Curves.fastOutSlowIn,
                             duration: const Duration(milliseconds: 2000));
                       }
+                      Get.off(const HomeScreen());
                     },
                     color: Colors.amber.shade400,
                     textColor: Colors.white,
