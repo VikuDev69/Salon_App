@@ -177,7 +177,7 @@ class _OTpPagePageState extends State<OTpPage> {
                         borderRadius: BorderRadius.circular(10)),
                     onPressed: () {
                       if (formkey.currentState!.validate()) {
-                        Get.off(HomeScreen());
+                        Get.off(const HomeScreen());
                       } else {
                         Get.snackbar("", "",
                             colorText: Colors.white,
@@ -211,7 +211,6 @@ class _OTpPagePageState extends State<OTpPage> {
                             reverseAnimationCurve: Curves.fastOutSlowIn,
                             duration: const Duration(milliseconds: 2000));
                       }
-                      Get.off(const HomeScreen());
                     },
                     color: Colors.amber.shade400,
                     textColor: Colors.white,
